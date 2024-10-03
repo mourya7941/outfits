@@ -1,0 +1,46 @@
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set global fonts */
+body {
+  font-family: 'Inter', sans-serif;
+  /* Modern sans-serif font for body */
+}
+
+/* Font for headings and accents */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.headline {
+  font-family: 'Playfair Display', serif;
+  /* Stylish serif font for emphasis */
+}
+
+/* Optional Fredoka for specific components */
+.fredoka {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 800;
+}
+
+
+::-webkit-scrollbar{
+  display: none;
+}
+/* Responsive typography and interactions */
+@media (max-width:640px) {
+  a.active {
+    background-color: black;
+    color: white;
+  }
+}
+
+/* Active link styling */
+a.active hr {
+  display: block;
+}
